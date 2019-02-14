@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@import url(../../node_modules/bootstrap/dist/css/bootstrap.css);
+@import url(../../node_modules/@fortawesome/fontawesome-free/css/all.min.css);
+@font-face {
+  font-family: font-poppers;
+  src: url("../../public/font/Poppins/Poppins-Regular.ttf"); }
+body {
+  font-family: font-poppers; }
+
+header img {
+  height: 20px; }
+
+.nav-link {
+  font-size: 20px; }
+
+#shopAt {
+  background-color: #F3F2F3;
+  padding-left: 10%;
+  padding-top: 8%; }
+
+.pShop {
+  width: 110%; }
+
+.imgShop {
+  width: 70%; }
+
+.btn-danger {
+  border-radius: 20px; }
+
+.imgServices {
+  width: 100%; }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px; }
+
+.imgRecent {
+  width: 100%; }
+
+.pRecent {
+  font-size: 13px; }
+
+.pRecentPrix {
+  font-size: 13px; }
+
+.roundedSales {
+  float: left;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  font-size: 10px; }
+
+#discover {
+  background-image: url("../../public/image/images/cta-bg.jpg");
+  background-size: 100%;
+  height: 400px;
+  background-attachment: fixed; }
+
+.h3Discover {
+  padding-top: 10%;
+  margin-left: 4%; }
+
+.btnDiscover {
+  margin-left: 50%;
+  margin-top: 1%; }
+
+.d-inline {
+  width: 24%; }
+
+#fashion h4 {
+  font-size: 15px; }
+
+.pFashion {
+  font-size: 9px; }
+
+footer ul {
+  margin-left: -30px;
+  font-size: 14px; }
+footer .borders a {
+  border: 0.5px solid gray !important;
+  color: gray; }
+
+.bg-noir {
+  background-color: black; }
+
+￼.navbar {
+  position: fixed;
+  background-color: black; }
+
+nav {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  margin: 0 auto; }
+
+.fixed-nav nav {
+  position: fixed;
+  top: 0;
+  z-index: 1030;
+  transition: 0s; }
+
+/*# sourceMappingURL=style.css.map */
