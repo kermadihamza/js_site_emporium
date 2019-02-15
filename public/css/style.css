@@ -103,4 +103,137 @@ nav {
   z-index: 1030;
   transition: 0s; }
 
+.overlay {
+  position: absolute;
+  bottom: 21.5%;
+  left: 2.2%;
+  right: 50%;
+  background-color: #1e1e1e;
+  overflow: hidden;
+  width: 50%;
+  height: 0;
+  transition: 0.5s ease; }
+
+.colRecentPrix:hover .overlay {
+  height: 18%; }
+
+.text {
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left; }
+
+.overlay2 {
+  position: absolute;
+  bottom: 21.5%;
+  left: 52%;
+  right: 0;
+  background-color: red;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 46%;
+  height: 0;
+  transition: 0.5s ease; }
+
+.colRecentPrix:hover .overlay2 {
+  height: 18%; }
+
+.text2 {
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.colRecentPrix img {
+  max-width: 100%;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  transition: 0.5s ease; }
+
+.colRecentPrix:hover img {
+  -webkit-transform: scale(1.05, 1.05);
+  -moz-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05); }
+
+.colRecentPrix:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  -moz-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease; }
+
+.colRecentPrix:hover:before {
+  opacity: 1; }
+
+.boutonConnexion {
+  border-radius: 10px;
+  border: 1px solid; }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; }
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer; }
+
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
+
+.centered-form {
+  margin-top: 60px; }
+
+.centered-form .panel {
+  background: rgba(255, 255, 255, 0.8); }
+
+.changepanel {
+  margin-top: 20%; }
+
+.connexion {
+  border-right: 1px solid; }
+
+.signin {
+  width: 45%; }
+
+.register {
+  margin-left: 50%;
+  width: 45%; }
+
 /*# sourceMappingURL=style.css.map */

@@ -77,7 +77,6 @@ function changeColorD() {
           document.body.classList.add('fixed-nav');
           emporiumScroll.style.display = '';
       } else {
-        document.body.style.paddingTop = 0;
         document.body.classList.remove('fixed-nav');
         emporiumScroll.style.display = 'none';
         // emporium.classList.remove('pl-3');
@@ -86,3 +85,27 @@ function changeColorD() {
     }
     
     window.addEventListener('scroll', stickyNavigation);
+
+
+    var modal = document.getElementById('myModal');
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    
+let displayBeforeClick = document.getElementsByClassName('marginSignIn')[0];
+let btnConnexion = document.getElementById('myBtn');
+
+function Disparaitre() {
+    displayBeforeClick.style.display = 'none';
+}
+btnConnexion.addEventListener('click',Disparaitre)
