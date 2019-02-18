@@ -5,7 +5,19 @@ let body = document.getElementsByTagName('body')[0];
 let nav = document.getElementsByTagName('nav')[0];
 let emporium = document.getElementsByClassName('emporium')[0];
 let emporiumScroll = document.getElementsByClassName('emporiumScroll')[0];
+let register = document.getElementsByClassName('register')[0];
+let btnRegister = document.getElementsByClassName('registerAccount')[0];
+let btnConnexion = document.getElementsByClassName('ok')[0];
+let signIn = document.getElementsByClassName('connexion')[0];
+let createAccount = document.getElementsByClassName('createAccount')[0];
+let repUsers = document.getElementById('first_name');
+let btnConnect = document.getElementById('myBtnConnect');
+let off = document.getElementsByClassName('fa-power-off')[0];
+off.style.display = 'none';
+btnConnect.style.display = 'none'
+register.style.display = 'none';
 emporiumScroll.style.display = 'none';
+
 
 console.log(btnBlack);
 console.log(header);
@@ -101,11 +113,47 @@ function changeColorD() {
         modal.style.display = "none";
       }
     }
-    
-let displayBeforeClick = document.getElementsByClassName('marginSignIn')[0];
-let btnConnexion = document.getElementById('myBtn');
 
-function Disparaitre() {
-    displayBeforeClick.style.display = 'none';
+
+function create() {
+  if (createAccount) {
+    register.style.display = '';
+  signIn.style.display = 'none';
+  }
 }
-btnConnexion.addEventListener('click',Disparaitre)
+createAccount.addEventListener('click', create);
+
+function registerOk() {
+    if (btnRegister) {
+      signIn.style.display = '';
+      register.style.display = 'none';
+    }
+}
+btnRegister.addEventListener('click', registerOk);
+
+
+function connexion() {
+  if (btnConnexion) {
+    btn.style.display = 'none'
+    event.preventDefault();
+    modal.style.display = 'none'    
+    btnConnect.style.display = '';
+    btnConnect.innerHTML = repUsers.value + ` <i class="fas fa-user"></i>`
+    off.style.display = '';
+}
+}
+btnConnexion.addEventListener('click', connexion);
+
+
+function deco() {
+  if (off) {
+    btn.style.display = ''
+    off.style.display = 'none';
+    btnConnect.style.display = 'none'
+  }
+}
+off.addEventListener('click', deco);
+
+
+
+

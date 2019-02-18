@@ -186,6 +186,9 @@ nav {
   border-radius: 10px;
   border: 1px solid; }
 
+.boutonRegister {
+  margin-left: 35%; }
+
 .modal {
   display: none;
   position: fixed;
@@ -227,7 +230,8 @@ nav {
   margin-top: 20%; }
 
 .connexion {
-  border-right: 1px solid; }
+  margin-left: 25%;
+  border: 1px solid #898888; }
 
 .signin {
   width: 45%; }
@@ -235,5 +239,18 @@ nav {
 .register {
   margin-left: 50%;
   width: 45%; }
+
+.formSign {
+  margin-top: -11%; }
+
+.register {
+  margin-left: 25%;
+  border: 1px solid #898888; }
+
+.formRegister {
+  margin-top: -11%; }
+
+.emporiumSection1 {
+  font-size: 70px; }
 
 /*# sourceMappingURL=style.css.map */

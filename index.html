@@ -41,96 +41,87 @@
                     </li>
                 </ul>
 
-                <button class="p-2 bg-white  square1 ml-5"></button>
-                <button class="p-2 mr-2 bg-dark square2 ml-2"></button>
-                <a class="nav-link  btn bg-dark text-white" id="myBtn" href="#">Connexion <span class="sr-only">(current)</span></a>
-                <div id="myModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close text-right">&times;</span>
+            </div>
+            <button class="p-2 bg-white  square1 ml-5"></button>
+            <button class="p-2 mr-2 bg-dark square2 ml-2"></button>
+            <a class="nav-link  btn bg-dark text-white" id="myBtn" href="#">Connexion <span class="sr-only">(current)</span></a>
+            <a class="nav-link  btn bg-success text-white" id="myBtnConnect" href="#"><span class="sr-only">(current)</span></a>
+            <a href="#"><i class="fas fa-power-off text-danger pl-2 fa-2x"></i></a>
+            <div id="myModal" class="modal">
+                <div class="modal-content ">
+                    <span class="close text-right">&times;</span>
 
-                        <div class="row">
-                            <div class="col-sm-12">
-
-                            </div>
-                            <div class="col-md-12">
-
-                            </div>
-                            <div class="col-lg-6">
-                                
-                            </div>
-                        </div>
-
-                        <a class="nav-link  btn bg-dark signin text-white" href="#">Sign in <span class="sr-only">(current)</span></a>
-                        <a class="nav-link  btn bg-dark register text-white" href="#">Register <span class="sr-only">(current)</span></a>
-                        <div class="container">
-                            <div class="row marginSignIn">
-                                <div class="col-6 connexion">
-                                    <h3 class="panel-title changepanel">sign in</h3>
-                                    <div class="panel-body">
-                                        <form role="form">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-6 col-md-6">
-                                                    <div class="form-group">
-                                                        <input type="text" name="first_name" id="first_name" class="form-control input-sm"
-                                                            placeholder="Pseudo">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-6 col-md-6">
-                                                    <div class="form-group">
-                                                        <input type="password" name="password_confirmation" id="password_confirmation"
-                                                            class="form-control input-sm" placeholder="Confirm Password">
-                                                    </div>
+                    <!-- <a class="nav-link  btn bg-dark signin text-white" href="#">Sign in <span class="sr-only">(current)</span></a>
+                    <a class="nav-link  btn bg-dark register text-white" href="#">Register <span class="sr-only">(current)</span></a> -->
+                    <div class="container ">
+                        <div class="row marginSignIn">
+                            <div class="col-6 connexion ">
+                                    <h3 class="pt-3"><strong>Sign in</strong></h3>
+                                <div class="panel-body changepanel">
+                                    <form role="form" class="formSign">
+                                        <div class="row no-gutters">
+                                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                                <div class="form-group">
+                                                    <input type="text" name="username" id="first_name" class="form-control input-sm"
+                                                        placeholder="Username">
                                                 </div>
                                             </div>
-                                            <button class="btn btn-info btn-block boutonRegister w-25 mb-5">Connexion</button>
-                                        </form>
-                                    </div>
-
+                                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                                <div class="form-group">
+                                                    <input type="password" name="password" id="password_confirmation"
+                                                        class="form-control input-sm" placeholder="Password">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>No account?<a class="createAccount" href="#">Create one!</a></p>
+                                        <button class="btn btn-info btn-block boutonRegister ok  w-25 mb-5 mt-2">Connexion</button>
+                                    </form>
                                 </div>
-                                <div class="col-6">
-                                    <div class="row centered-form">
-                                        <div class="p-5 divModal">
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading">
-                                                    <h3 class="panel-title">Please sign up</h3>
-                                                </div>
-                                                <div class="panel-body">
-                                                    <form role="form">
-                                                        <div class="row">
-                                                            <div class="col-xs-6 col-sm-6 col-md-6">
-                                                                <div class="form-group">
-                                                                    <input type="text" name="first_name" class="form-control input-sm"
-                                                                        placeholder="First Name">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-xs-6 col-sm-6 col-md-6">
-                                                                <div class="form-group">
-                                                                    <input type="password" class="form-control input-sm"
-                                                                        placeholder="Password">
-                                                                </div>
+
+                            </div>
+                            <div class="col-6 register">
+                                    <h3 class="pt-3"><strong>Register</strong></h3>
+                                <div class="row centered-form">
+                                    <div class="p-5 divModal">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                            </div>
+                                            <div class="panel-body changepanel2">
+                                                <form role="form" class="formRegister">
+                                                    <div class="row">
+                                                        <div class="col-xs-6 col-sm-6 col-md-6">
+                                                            <div class="form-group">
+                                                                <input type="text" name="full_name" class="form-control input-sm"
+                                                                    placeholder="Full Name">
                                                             </div>
                                                         </div>
-                                                        <div class="form-group">
-                                                            <input type="email" name="email" class="form-control input-sm"
-                                                                placeholder="Email Address">
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-xs-6 col-sm-6 col-md-6">
-                                                                <div class="form-group">
-                                                                    <input type="password" name="password" class="form-control input-sm"
-                                                                        placeholder="Password">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-xs-6 col-sm-6 col-md-6">
-                                                                <div class="form-group">
-                                                                    <input type="password" name="password_confirmation"
-                                                                        class="form-control input-sm" placeholder="Confirm Password">
-                                                                </div>
+                                                        <div class="col-xs-6 col-sm-6 col-md-6">
+                                                            <div class="form-group">
+                                                            <input type="text" name="username" class="form-control input-sm"
+                                                                    placeholder="Username">
                                                             </div>
                                                         </div>
-                                                        <input type="submit" value="Register" class="btn btn-info btn-block boutonRegister w-25 mb-5">
-                                                    </form>
-                                                </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="email" name="email" class="form-control input-sm"
+                                                            placeholder="Email Address">
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-xs-6 col-sm-6 col-md-6">
+                                                            <div class="form-group">
+                                                                <input type="password" name="password" class="form-control input-sm"
+                                                                    placeholder="Password">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-6 col-sm-6 col-md-6">
+                                                            <div class="form-group">
+                                                                <input type="password" name="password_confirmation"
+                                                                    class="form-control input-sm" placeholder="Confirm Password">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <input type="submit" value="Register" class="btn btn-info btn-block boutonRegister registerAccount w-25 mb-5">
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
@@ -151,7 +142,8 @@
                     <h4 class="text-danger">
                         Shop at
                     </h4>
-                    <img class="test" src="public/image/images/logo.png" alt="">
+                    <h4 class="emporiumSection1"><strong>emporium.</strong></h4>
+                    
                     <p class="pShop text-secondary">
                         a wonderful serenity has taken possession of my entire soul, like these sweet morning of spring
                         which I enjoy with my.
