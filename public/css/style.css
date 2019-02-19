@@ -54,6 +54,9 @@ header img {
   border-radius: 50%;
   font-size: 10px; }
 
+@media screen and (max-width: 576px) {
+  .square2 {
+    margin-right: 10px; } }
 #discover {
   background-image: url("../../public/image/images/cta-bg.jpg");
   background-size: 100%;
@@ -251,6 +254,36 @@ nav {
   margin-top: -11%; }
 
 .emporiumSection1 {
-  font-size: 70px; }
+  font-size: 50px; }
+
+.forHidden {
+  overflow: hidden; }
+
+.buttons {
+  border: 1px solid;
+  border-radius: 45%; }
+
+.slide {
+  width: 2010px; }
+
+.imgChange {
+  height: auto;
+  width: 220px; }
+
+@media screen and (min-width: 992px) {
+  #hotFashion .buttons4 {
+    display: none !important; }
+  #hotFashion .buttons5 {
+    display: none !important; }
+  #hotFashion .buttons6 {
+    display: none !important; } }
+@media screen and (min-width: 768px) {
+  #hotFashion .buttons5 {
+    display: none !important; }
+  #hotFashion .buttons6 {
+    display: none !important; } }
+@media screen and (min-width: 576px) {
+  #hotFashion .buttons6 {
+    display: none !important; } }
 
 /*# sourceMappingURL=style.css.map */

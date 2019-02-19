@@ -65,8 +65,6 @@ function changeColorD() {
     let colorChange = document.querySelectorAll('.change');
         for (i = 0; i < colorChange.length; i++) {
             colorChange[i].classList.remove('text-white');
-            colorChange[i].classList.add('text-dark');
-            colorChange[i].classList.add('text-secondary');
             emporium.style.color = 'black';
             emporiumScroll.style.color = 'black';
 
@@ -78,6 +76,8 @@ function changeColorD() {
 
     let navB = document.querySelector('#navigation');
     let navTop = nav.offsetTop;
+    let square1 = document.getElementsByClassName('square1')[0];   
+ let square2 = document.getElementsByClassName('square2')[0];
     
     function stickyNavigation() {
       console.log('navTop = ' + navTop);
@@ -86,11 +86,17 @@ function changeColorD() {
       if (window.scrollY >= navTop) {
           // nav offsetHeight = height of nav
           document.body.style.paddingTop = navB.offsetHeight + 'px';
+          square1.style.display = 'none';
+          square2.style.display = 'none';
+          btn.style.display = 'none';
           document.body.classList.add('fixed-nav');
           emporiumScroll.style.display = '';
       } else {
         document.body.classList.remove('fixed-nav');
         emporiumScroll.style.display = 'none';
+        square1.style.display = '';
+        square2.style.display = '';
+        btn.style.display = '';
         // emporium.classList.remove('pl-3');
         // emporium.classList.add('text-center');
       }
@@ -140,6 +146,7 @@ function connexion() {
     btnConnect.style.display = '';
     btnConnect.innerHTML = repUsers.value + ` <i class="fas fa-user"></i>`
     off.style.display = '';
+    
 }
 }
 btnConnexion.addEventListener('click', connexion);
@@ -155,5 +162,60 @@ function deco() {
 off.addEventListener('click', deco);
 
 
+// let prev = document.getElementsByClassName('prev')[0];
+// let next = document.getElementsByClassName('next')[0];
+// let imgCarousel = document.querySelectorAll('#carouselExampleIndicators img')
+// console.log(next);
 
 
+// function oneOne() {
+//   if (next) {
+    
+//   } 
+// }
+// next.addEventListener('click', oneOne)
+
+
+
+// function slide3() {
+//     slideDiv.style.transform = 'translateX(-14.28%)';
+//     slideDiv.style.transition = 'all 1s ease';
+//     event.preventDefault()
+// }
+// test1[1].addEventListener('click', slide3)
+
+// function slide2() {
+//     slideDiv.style.transform = 'translateX(-28.56%)';
+//     slideDiv.style.transition = 'all is ease';
+//     event.preventDefault()
+// }
+// test1[2].addEventListener('click', slide2);
+
+let buttons0 = document.getElementsByClassName('buttons0')[0];
+let buttons1 = document.getElementsByClassName('buttons1')[0];
+let buttons2 = document.getElementsByClassName('buttons2')[0];
+let buttons3 = document.getElementsByClassName('buttons3')[0];
+let buttons4 = document.getElementsByClassName('buttons4')[0];
+let buttons5 = document.getElementsByClassName('buttons5')[0];
+let buttons6 = document.getElementsByClassName('buttons6')[0];
+
+let slideDiv = document.getElementsByClassName('slide')[0];
+let colMza = document.querySelectorAll(".col > img")
+
+function slide(event) {
+  console.dir(event.currentTarget.dataset.position);
+  let pos = event.currentTarget.dataset.position;
+  slideDiv.style.transform = 'translateX(' + -14.28 * pos + '%)'
+  // slideDiv.style.transform = `translateX( ${-14.28 * pos}%)`
+  slideDiv.style.transition = 'all 1s ease'
+    event.preventDefault()
+}
+
+buttons0.addEventListener('click', slide);
+buttons1.addEventListener('click', slide);
+buttons2.addEventListener('click', slide);
+buttons3.addEventListener('click', slide);
+buttons4.addEventListener('click', slide);
+buttons5.addEventListener('click', slide);
+buttons6.addEventListener('click', slide);
+buttons7.addEventListener('click', slide);

@@ -14,7 +14,7 @@
     <header id="">
         <h4 class="text-center mt-4 emporium"><strong>emporium.</strong></h4>
         <nav id="navigation" class="navbar navbar-expand-lg navbar-light bg-light text-center pl-5">
-            <button class="navbar-toggler bg-danger" type="button" data-toggle="collapse" data-target="#navbarNav"
+            <button class="navbar-toggler buttonChange bg-danger" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -22,21 +22,21 @@
             <div class="collapse navbar-collapse justify-content-center font-weight-light ml-5" id="navbarNav">
                 <ul class="navbar-nav text-uppercase ">
                     <li class="nav-item active ">
-                        <a class="nav-link change  text-dark " href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link change changeSolo text-dark " href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item inactive">
                         <a class="nav-link change change1  text-secondary" href="#">Product <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item inactive">
                         <a class="nav-link change change1  text-secondary" href="#">blog <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item inactive">
                         <a class="nav-link change change1  text-secondary" href="#">elements <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item inactive">
                         <a class="nav-link change change1  text-secondary" href="#">about <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item inactive">
                         <a class="nav-link change change1  text-secondary" href="#">contact <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
@@ -337,8 +337,58 @@
     <section id="hotFashion">
         <p class="text-center pt-4 change"><strong>Hot Fashion Products</strong></p>
 
-        <div class="container">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        
+<div class="container ">
+<div class="forHidden">
+    <div class="slide">
+    <div class="row">
+
+        <div class="col"><img class="imgChange" src="public/image/images/products/product-bag-700x500.jpg" alt=""></div>
+        <div class="col"><img class="imgChange" src="public/image/images/products/product-tshitr-white-700x500.jpg" alt=""></div>
+        <div class="col"><img class="imgChange" src="public/image/images/products/product-jacket-700x500.jpg" alt=""></div>
+        <div class="col"><img class="imgChange" src="public/image/images/products/product-shoes-700x500.jpg" alt=""></div>
+        <div class="col"><img class="imgChange" src="public/image/images/products/product-tshitr-700x500.jpg" alt=""></div>
+        <div class="col"><img class="imgChange" src="public/image/images/products/product-bag-2-700x500.jpg" alt=""></div>
+        <div class="col"><img class="imgChange" src="public/image/images/products_mini/product-gloves.jpg" alt=""></div>
+    </div>
+</div>
+</div>
+            <div class="buttonSlide text-center">
+               <span data-position="0" class="buttons buttons0 pl-3 ml-3"><a href="#"></a></span>
+               <span data-position="1" class="buttons buttons1 pl-3 ml-3"><a href="#"></a></span>
+               <span data-position="2" class="buttons buttons2 pl-3 ml-3"><a href="#"></a></span>
+               <span data-position="3" class="buttons buttons3 pl-3 ml-3"><a href="#"></a></span>
+               <span data-position="4" class="buttons buttons4 buttonsTel pl-3 ml-3"><a href="#"></a></span>
+               <span data-position="5" class="buttons buttons5 buttonsTel pl-3 ml-3"><a href="#"></a></span>
+               <span data-position="6" class="buttons buttons6 buttonsTel pl-3 ml-3"><a href="#"></a></span>
+            </div>
+
+
+</div>
+
+            <!-- <div class="imagesCarousel">
+                <img class="img-fluid mx-auto d-inline" src="public/image/images/products_mini/product-bag.jpg" alt="">
+                <img class="img-fluid mx-auto d-inline" src="public/image/images/products_mini/product-bed.jpg" alt="">
+                <img class="img-fluid mx-auto d-inline" src="public/image/images/products_mini/product-cups.jpg" alt="">
+                <img class="img-fluid mx-auto d-inline" src="public/image/images/products_mini/product-gloves.jpg" alt="">
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" >
+                    <span class="carousel-control-prev-icon bg-dark" ></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next text-faded" href="#carouselExample" role="button" >
+                    <span class="carousel-control-next-icon bg-dark" ></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            <div class="imagesCarousel ">
+                <img class="img-fluid mx-auto d-inline" src="public/image/images/products_mini/product-luxry-sofa.jpg" alt="">
+                <img class="img-fluid mx-auto d-inline" src="public/image/images/products_mini/product-modern-sofa.jpg" alt="">
+                <img class="img-fluid mx-auto d-inline" src="public/image/images/products_mini/product-plates.jpg" alt="">
+                <img class="img-fluid mx-auto d-inline" src="public/image/images/products_mini/product-shoes.jpg" alt="">
+            </div> -->
+
+
+            <!-- <div id="carouselExampleIndicators" class="carousel slide" >
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -358,16 +408,15 @@
 
                     </div>
 
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <a class="carousel-control-prev prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon prev" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <a class="carousel-control-next next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon next" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                </div>
-            </div>
+                </div> -->
     </section>
 
 
